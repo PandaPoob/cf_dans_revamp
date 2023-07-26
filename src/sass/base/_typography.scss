@@ -1,0 +1,65 @@
+@use "../variables/vars";
+@use "../variables/mixins";
+
+h1 {
+  font-family: vars.$displayfont;
+  font-size: vars.$fs-lg;
+  color: vars.$brandblack;
+  cursor: default;
+  @include mixins.bp-md {
+    font-size: vars.$fs-xl;
+  }
+}
+
+h2 {
+  font-family: vars.$displayfont;
+  font-size: vars.$fs-md;
+  color: vars.$brandblack;
+  cursor: default;
+  @include mixins.bp-md {
+    font-size: vars.$fs-lg;
+  }
+}
+
+h3 {
+  font-family: vars.$displayfont;
+  font-size: vars.$fs-sm;
+  color: vars.$brandblack;
+  cursor: default;
+  @include mixins.bp-md {
+    font-size: vars.$fs-md;
+  }
+}
+
+h4 {
+  font-family: vars.$bodyfont;
+  font-size: vars.$fs-xs;
+  color: vars.$brandblack;
+  cursor: default;
+  @include mixins.bp-md {
+    font-size: vars.$fs-sm;
+  }
+}
+
+h5 {
+  font-family: vars.$bodyfont;
+  font-size: vars.$fs-xxs;
+  color: vars.$brandblack;
+  cursor: default;
+  @include mixins.bp-md {
+    font-size: vars.$fs-xs;
+  }
+}
+
+p {
+  font-family: vars.$bodyfont;
+  font-size: vars.$fs-xxs;
+  color: vars.$brandblack;
+  @include mixins.bp-md {
+    font-size: vars.$fs-xs;
+  }
+}
+
+a {
+  text-decoration: none;
+}

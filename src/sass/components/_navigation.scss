@@ -1,0 +1,19 @@
+@use "../variables/vars";
+@use "../variables/sizes";
+
+#nav {
+  background-color: vars.$brandwhite;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: sizes.$s-3;
+  padding-block: sizes.$s-2;
+}
+
+#nav_items {
+  display: flex;
+  gap: sizes.$s-13;
+}
+
+.nav_item {
+  text-decoration: none;
+}
